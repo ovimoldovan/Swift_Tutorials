@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "C4B1587E-BA9A-494E-98E3-366CBDA4D7B6"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "44410981-577B-4CF3-A2B4-52B69319543B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SwingWatch WatchKit Extension/InterfaceController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "InterfaceController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "44410981-577B-4CF3-A2B4-52B69319543B - 5ff8bc704c88e323"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SwingWatch_WatchKit_Extension.InterfaceController.forehandCountLabel.getter : Swift.Optional&lt;__C.WKInterfaceLabel&gt;"
+                  moduleName = "SwingWatch WatchKit Extension"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ovi/Documents/Licenta/SwingWatch/SwingWatch%20WatchKit%20Extension/InterfaceController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "98">
+               </Location>
+               <Location
+                  uuid = "44410981-577B-4CF3-A2B4-52B69319543B - bf7f653bb5720737"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SwingWatch_WatchKit_Extension.InterfaceController.forehandCountLabel.setter : Swift.Optional&lt;__C.WKInterfaceLabel&gt;"
+                  moduleName = "SwingWatch WatchKit Extension"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ovi/Documents/Licenta/SwingWatch/SwingWatch%20WatchKit%20Extension/InterfaceController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "118">
+               </Location>
+               <Location
+                  uuid = "44410981-577B-4CF3-A2B4-52B69319543B - 686092640029195e"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SwingWatch_WatchKit_Extension.InterfaceController.forehandCountLabel.modify : Swift.Optional&lt;__C.WKInterfaceLabel&gt;"
+                  moduleName = "SwingWatch WatchKit Extension"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ovi/Documents/Licenta/SwingWatch/SwingWatch%20WatchKit%20Extension/InterfaceController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "70">
+               </Location>
+               <Location
+                  uuid = "44410981-577B-4CF3-A2B4-52B69319543B - 6262d8eaba9ef450"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SwingWatch_WatchKit_Extension.InterfaceController.forehandCountLabel.modify : Swift.Optional&lt;__C.WKInterfaceLabel&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "SwingWatch WatchKit Extension"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ovi/Documents/Licenta/SwingWatch/SwingWatch%20WatchKit%20Extension/InterfaceController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "67">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

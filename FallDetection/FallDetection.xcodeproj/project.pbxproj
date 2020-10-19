@@ -1,0 +1,630 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8CFEDE1B236F2CEF00B05B4A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CFEDE1A236F2CEF00B05B4A /* AppDelegate.swift */; };
+		8CFEDE1D236F2CEF00B05B4A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CFEDE1C236F2CEF00B05B4A /* SceneDelegate.swift */; };
+		8CFEDE1F236F2CEF00B05B4A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CFEDE1E236F2CEF00B05B4A /* ViewController.swift */; };
+		8CFEDE22236F2CEF00B05B4A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CFEDE20236F2CEF00B05B4A /* Main.storyboard */; };
+		8CFEDE24236F2CF200B05B4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CFEDE23236F2CF200B05B4A /* Assets.xcassets */; };
+		8CFEDE27236F2CF200B05B4A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CFEDE25236F2CF200B05B4A /* LaunchScreen.storyboard */; };
+		8CFEDE34236F2D2800B05B4A /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CFEDE32236F2D2800B05B4A /* Interface.storyboard */; };
+		8CFEDE36236F2D2A00B05B4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CFEDE35236F2D2A00B05B4A /* Assets.xcassets */; };
+		8CFEDE3D236F2D2B00B05B4A /* FallDetectionWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 8CFEDE3C236F2D2B00B05B4A /* FallDetectionWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8CFEDE42236F2D2B00B05B4A /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CFEDE41236F2D2B00B05B4A /* InterfaceController.swift */; };
+		8CFEDE44236F2D2B00B05B4A /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CFEDE43236F2D2B00B05B4A /* ExtensionDelegate.swift */; };
+		8CFEDE46236F2D2B00B05B4A /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CFEDE45236F2D2B00B05B4A /* NotificationController.swift */; };
+		8CFEDE48236F2D2C00B05B4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CFEDE47236F2D2C00B05B4A /* Assets.xcassets */; };
+		8CFEDE4D236F2D2C00B05B4A /* FallDetectionWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 8CFEDE30236F2D2800B05B4A /* FallDetectionWatch.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8CFEDE3E236F2D2B00B05B4A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8CFEDE0F236F2CEF00B05B4A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8CFEDE3B236F2D2B00B05B4A;
+			remoteInfo = "FallDetectionWatch Extension";
+		};
+		8CFEDE4B236F2D2C00B05B4A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8CFEDE0F236F2CEF00B05B4A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8CFEDE2F236F2D2800B05B4A;
+			remoteInfo = FallDetectionWatch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8CFEDE51236F2D2C00B05B4A /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				8CFEDE3D236F2D2B00B05B4A /* FallDetectionWatch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CFEDE55236F2D2C00B05B4A /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				8CFEDE4D236F2D2C00B05B4A /* FallDetectionWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		8CFEDE17236F2CEF00B05B4A /* FallDetection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FallDetection.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CFEDE1A236F2CEF00B05B4A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8CFEDE1C236F2CEF00B05B4A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		8CFEDE1E236F2CEF00B05B4A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8CFEDE21236F2CEF00B05B4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8CFEDE23236F2CF200B05B4A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8CFEDE26236F2CF200B05B4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8CFEDE28236F2CF200B05B4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8CFEDE30236F2D2800B05B4A /* FallDetectionWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FallDetectionWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CFEDE33236F2D2800B05B4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		8CFEDE35236F2D2A00B05B4A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8CFEDE37236F2D2A00B05B4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8CFEDE3C236F2D2B00B05B4A /* FallDetectionWatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "FallDetectionWatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CFEDE41236F2D2B00B05B4A /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		8CFEDE43236F2D2B00B05B4A /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		8CFEDE45236F2D2B00B05B4A /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		8CFEDE47236F2D2C00B05B4A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8CFEDE49236F2D2C00B05B4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8CFEDE4A236F2D2C00B05B4A /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8CFEDE14236F2CEF00B05B4A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CFEDE39236F2D2B00B05B4A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8CFEDE0E236F2CEF00B05B4A = {
+			isa = PBXGroup;
+			children = (
+				8CFEDE19236F2CEF00B05B4A /* FallDetection */,
+				8CFEDE31236F2D2800B05B4A /* FallDetectionWatch */,
+				8CFEDE40236F2D2B00B05B4A /* FallDetectionWatch Extension */,
+				8CFEDE18236F2CEF00B05B4A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8CFEDE18236F2CEF00B05B4A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8CFEDE17236F2CEF00B05B4A /* FallDetection.app */,
+				8CFEDE30236F2D2800B05B4A /* FallDetectionWatch.app */,
+				8CFEDE3C236F2D2B00B05B4A /* FallDetectionWatch Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8CFEDE19236F2CEF00B05B4A /* FallDetection */ = {
+			isa = PBXGroup;
+			children = (
+				8CFEDE1A236F2CEF00B05B4A /* AppDelegate.swift */,
+				8CFEDE1C236F2CEF00B05B4A /* SceneDelegate.swift */,
+				8CFEDE1E236F2CEF00B05B4A /* ViewController.swift */,
+				8CFEDE20236F2CEF00B05B4A /* Main.storyboard */,
+				8CFEDE23236F2CF200B05B4A /* Assets.xcassets */,
+				8CFEDE25236F2CF200B05B4A /* LaunchScreen.storyboard */,
+				8CFEDE28236F2CF200B05B4A /* Info.plist */,
+			);
+			path = FallDetection;
+			sourceTree = "<group>";
+		};
+		8CFEDE31236F2D2800B05B4A /* FallDetectionWatch */ = {
+			isa = PBXGroup;
+			children = (
+				8CFEDE32236F2D2800B05B4A /* Interface.storyboard */,
+				8CFEDE35236F2D2A00B05B4A /* Assets.xcassets */,
+				8CFEDE37236F2D2A00B05B4A /* Info.plist */,
+			);
+			path = FallDetectionWatch;
+			sourceTree = "<group>";
+		};
+		8CFEDE40236F2D2B00B05B4A /* FallDetectionWatch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				8CFEDE41236F2D2B00B05B4A /* InterfaceController.swift */,
+				8CFEDE43236F2D2B00B05B4A /* ExtensionDelegate.swift */,
+				8CFEDE45236F2D2B00B05B4A /* NotificationController.swift */,
+				8CFEDE47236F2D2C00B05B4A /* Assets.xcassets */,
+				8CFEDE49236F2D2C00B05B4A /* Info.plist */,
+				8CFEDE4A236F2D2C00B05B4A /* PushNotificationPayload.apns */,
+			);
+			path = "FallDetectionWatch Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8CFEDE16236F2CEF00B05B4A /* FallDetection */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8CFEDE2B236F2CF200B05B4A /* Build configuration list for PBXNativeTarget "FallDetection" */;
+			buildPhases = (
+				8CFEDE13236F2CEF00B05B4A /* Sources */,
+				8CFEDE14236F2CEF00B05B4A /* Frameworks */,
+				8CFEDE15236F2CEF00B05B4A /* Resources */,
+				8CFEDE55236F2D2C00B05B4A /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8CFEDE4C236F2D2C00B05B4A /* PBXTargetDependency */,
+			);
+			name = FallDetection;
+			productName = FallDetection;
+			productReference = 8CFEDE17236F2CEF00B05B4A /* FallDetection.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8CFEDE2F236F2D2800B05B4A /* FallDetectionWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8CFEDE52236F2D2C00B05B4A /* Build configuration list for PBXNativeTarget "FallDetectionWatch" */;
+			buildPhases = (
+				8CFEDE2E236F2D2800B05B4A /* Resources */,
+				8CFEDE51236F2D2C00B05B4A /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8CFEDE3F236F2D2B00B05B4A /* PBXTargetDependency */,
+			);
+			name = FallDetectionWatch;
+			productName = FallDetectionWatch;
+			productReference = 8CFEDE30236F2D2800B05B4A /* FallDetectionWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		8CFEDE3B236F2D2B00B05B4A /* FallDetectionWatch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8CFEDE4E236F2D2C00B05B4A /* Build configuration list for PBXNativeTarget "FallDetectionWatch Extension" */;
+			buildPhases = (
+				8CFEDE38236F2D2B00B05B4A /* Sources */,
+				8CFEDE39236F2D2B00B05B4A /* Frameworks */,
+				8CFEDE3A236F2D2B00B05B4A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "FallDetectionWatch Extension";
+			productName = "FallDetectionWatch Extension";
+			productReference = 8CFEDE3C236F2D2B00B05B4A /* FallDetectionWatch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8CFEDE0F236F2CEF00B05B4A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = "Ovidiu Moldovan";
+				TargetAttributes = {
+					8CFEDE16236F2CEF00B05B4A = {
+						CreatedOnToolsVersion = 11.2;
+					};
+					8CFEDE2F236F2D2800B05B4A = {
+						CreatedOnToolsVersion = 11.2;
+					};
+					8CFEDE3B236F2D2B00B05B4A = {
+						CreatedOnToolsVersion = 11.2;
+					};
+				};
+			};
+			buildConfigurationList = 8CFEDE12236F2CEF00B05B4A /* Build configuration list for PBXProject "FallDetection" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8CFEDE0E236F2CEF00B05B4A;
+			productRefGroup = 8CFEDE18236F2CEF00B05B4A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8CFEDE16236F2CEF00B05B4A /* FallDetection */,
+				8CFEDE2F236F2D2800B05B4A /* FallDetectionWatch */,
+				8CFEDE3B236F2D2B00B05B4A /* FallDetectionWatch Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8CFEDE15236F2CEF00B05B4A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CFEDE27236F2CF200B05B4A /* LaunchScreen.storyboard in Resources */,
+				8CFEDE24236F2CF200B05B4A /* Assets.xcassets in Resources */,
+				8CFEDE22236F2CEF00B05B4A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CFEDE2E236F2D2800B05B4A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CFEDE36236F2D2A00B05B4A /* Assets.xcassets in Resources */,
+				8CFEDE34236F2D2800B05B4A /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CFEDE3A236F2D2B00B05B4A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CFEDE48236F2D2C00B05B4A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8CFEDE13236F2CEF00B05B4A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CFEDE1F236F2CEF00B05B4A /* ViewController.swift in Sources */,
+				8CFEDE1B236F2CEF00B05B4A /* AppDelegate.swift in Sources */,
+				8CFEDE1D236F2CEF00B05B4A /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CFEDE38236F2D2B00B05B4A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CFEDE46236F2D2B00B05B4A /* NotificationController.swift in Sources */,
+				8CFEDE44236F2D2B00B05B4A /* ExtensionDelegate.swift in Sources */,
+				8CFEDE42236F2D2B00B05B4A /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8CFEDE3F236F2D2B00B05B4A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8CFEDE3B236F2D2B00B05B4A /* FallDetectionWatch Extension */;
+			targetProxy = 8CFEDE3E236F2D2B00B05B4A /* PBXContainerItemProxy */;
+		};
+		8CFEDE4C236F2D2C00B05B4A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8CFEDE2F236F2D2800B05B4A /* FallDetectionWatch */;
+			targetProxy = 8CFEDE4B236F2D2C00B05B4A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8CFEDE20236F2CEF00B05B4A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8CFEDE21236F2CEF00B05B4A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8CFEDE25236F2CF200B05B4A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8CFEDE26236F2CF200B05B4A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		8CFEDE32236F2D2800B05B4A /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8CFEDE33236F2D2800B05B4A /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8CFEDE29236F2CF200B05B4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8CFEDE2A236F2CF200B05B4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8CFEDE2C236F2CF200B05B4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8R27X53BRJ;
+				INFOPLIST_FILE = FallDetection/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.testSensors;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8CFEDE2D236F2CF200B05B4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8R27X53BRJ;
+				INFOPLIST_FILE = FallDetection/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.testSensors;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8CFEDE4F236F2D2C00B05B4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8R27X53BRJ;
+				INFOPLIST_FILE = "FallDetectionWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.testSensors.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Debug;
+		};
+		8CFEDE50236F2D2C00B05B4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8R27X53BRJ;
+				INFOPLIST_FILE = "FallDetectionWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.testSensors.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Release;
+		};
+		8CFEDE53236F2D2C00B05B4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8R27X53BRJ;
+				IBSC_MODULE = FallDetectionWatch_Extension;
+				INFOPLIST_FILE = FallDetectionWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.testSensors.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Debug;
+		};
+		8CFEDE54236F2D2C00B05B4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8R27X53BRJ;
+				IBSC_MODULE = FallDetectionWatch_Extension;
+				INFOPLIST_FILE = FallDetectionWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.testSensors.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8CFEDE12236F2CEF00B05B4A /* Build configuration list for PBXProject "FallDetection" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8CFEDE29236F2CF200B05B4A /* Debug */,
+				8CFEDE2A236F2CF200B05B4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8CFEDE2B236F2CF200B05B4A /* Build configuration list for PBXNativeTarget "FallDetection" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8CFEDE2C236F2CF200B05B4A /* Debug */,
+				8CFEDE2D236F2CF200B05B4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8CFEDE4E236F2D2C00B05B4A /* Build configuration list for PBXNativeTarget "FallDetectionWatch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8CFEDE4F236F2D2C00B05B4A /* Debug */,
+				8CFEDE50236F2D2C00B05B4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8CFEDE52236F2D2C00B05B4A /* Build configuration list for PBXNativeTarget "FallDetectionWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8CFEDE53236F2D2C00B05B4A /* Debug */,
+				8CFEDE54236F2D2C00B05B4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8CFEDE0F236F2CEF00B05B4A /* Project object */;
+}

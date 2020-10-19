@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="15505" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="15501"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="iOS_Accelerometer_CoreMotion_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <textField width="1" alignment="left" text="Text" id="RCU-Rc-Op6"/>
+                        <textField width="1" alignment="left" text="Text" id="eOw-aS-7gw"/>
+                        <textField width="1" alignment="left" text="Text" id="6rT-0E-CTu"/>
+                    </items>
+                    <connections>
+                        <outlet property="xAccel" destination="RCU-Rc-Op6" id="IVU-fZ-dT2"/>
+                        <outlet property="yAccel" destination="eOw-aS-7gw" id="lNg-Gx-N9U"/>
+                        <outlet property="zAccel" destination="6rT-0E-CTu" id="4Uf-Su-gsQ"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="34" y="31"/>
+        </scene>
+    </scenes>
+</document>

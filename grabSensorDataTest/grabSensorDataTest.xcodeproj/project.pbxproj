@@ -1,0 +1,588 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8CFEDD9B236F03CF00B05B4A /* grabSensorDataTest WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 8CFEDD9A236F03CF00B05B4A /* grabSensorDataTest WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8CFEDDA1236F03CF00B05B4A /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CFEDD9F236F03CF00B05B4A /* Interface.storyboard */; };
+		8CFEDDA3236F03D200B05B4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CFEDDA2236F03D200B05B4A /* Assets.xcassets */; };
+		8CFEDDAA236F03D200B05B4A /* grabSensorDataTest WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 8CFEDDA9236F03D200B05B4A /* grabSensorDataTest WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8CFEDDAF236F03D200B05B4A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CFEDDAE236F03D200B05B4A /* ContentView.swift */; };
+		8CFEDDB1236F03D200B05B4A /* HostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CFEDDB0236F03D200B05B4A /* HostingController.swift */; };
+		8CFEDDB3236F03D200B05B4A /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CFEDDB2236F03D200B05B4A /* ExtensionDelegate.swift */; };
+		8CFEDDB5236F03D200B05B4A /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CFEDDB4236F03D200B05B4A /* NotificationController.swift */; };
+		8CFEDDB7236F03D200B05B4A /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CFEDDB6236F03D200B05B4A /* NotificationView.swift */; };
+		8CFEDDB9236F03D300B05B4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CFEDDB8236F03D300B05B4A /* Assets.xcassets */; };
+		8CFEDDBC236F03D300B05B4A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CFEDDBB236F03D300B05B4A /* Preview Assets.xcassets */; };
+		8CFEDDCD236F052E00B05B4A /* AccelerometerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CFEDDCC236F052E00B05B4A /* AccelerometerView.swift */; };
+		8CFEDDCF236F08D300B05B4A /* MotionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CFEDDCE236F08D300B05B4A /* MotionManager.swift */; };
+		8CFEDDD1236F098200B05B4A /* RunningBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CFEDDD0236F098200B05B4A /* RunningBuffer.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8CFEDD9C236F03CF00B05B4A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8CFEDD90236F03CF00B05B4A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8CFEDD99236F03CF00B05B4A;
+			remoteInfo = "grabSensorDataTest WatchKit App";
+		};
+		8CFEDDAB236F03D200B05B4A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8CFEDD90236F03CF00B05B4A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8CFEDDA8236F03D200B05B4A;
+			remoteInfo = "grabSensorDataTest WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8CFEDDC4236F03D300B05B4A /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				8CFEDDAA236F03D200B05B4A /* grabSensorDataTest WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CFEDDC8236F03D300B05B4A /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				8CFEDD9B236F03CF00B05B4A /* grabSensorDataTest WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		8CFEDD96236F03CF00B05B4A /* grabSensorDataTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = grabSensorDataTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CFEDD9A236F03CF00B05B4A /* grabSensorDataTest WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "grabSensorDataTest WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CFEDDA0236F03CF00B05B4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		8CFEDDA2236F03D200B05B4A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8CFEDDA4236F03D200B05B4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8CFEDDA9236F03D200B05B4A /* grabSensorDataTest WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "grabSensorDataTest WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CFEDDAE236F03D200B05B4A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		8CFEDDB0236F03D200B05B4A /* HostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingController.swift; sourceTree = "<group>"; };
+		8CFEDDB2236F03D200B05B4A /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		8CFEDDB4236F03D200B05B4A /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		8CFEDDB6236F03D200B05B4A /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		8CFEDDB8236F03D300B05B4A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8CFEDDBB236F03D300B05B4A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8CFEDDBD236F03D300B05B4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8CFEDDBE236F03D300B05B4A /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		8CFEDDCC236F052E00B05B4A /* AccelerometerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccelerometerView.swift; sourceTree = "<group>"; };
+		8CFEDDCE236F08D300B05B4A /* MotionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionManager.swift; sourceTree = "<group>"; };
+		8CFEDDD0236F098200B05B4A /* RunningBuffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunningBuffer.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8CFEDDA6236F03D200B05B4A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8CFEDD8F236F03CF00B05B4A = {
+			isa = PBXGroup;
+			children = (
+				8CFEDD9E236F03CF00B05B4A /* grabSensorDataTest WatchKit App */,
+				8CFEDDAD236F03D200B05B4A /* grabSensorDataTest WatchKit Extension */,
+				8CFEDD97236F03CF00B05B4A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8CFEDD97236F03CF00B05B4A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8CFEDD96236F03CF00B05B4A /* grabSensorDataTest.app */,
+				8CFEDD9A236F03CF00B05B4A /* grabSensorDataTest WatchKit App.app */,
+				8CFEDDA9236F03D200B05B4A /* grabSensorDataTest WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8CFEDD9E236F03CF00B05B4A /* grabSensorDataTest WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				8CFEDD9F236F03CF00B05B4A /* Interface.storyboard */,
+				8CFEDDA2236F03D200B05B4A /* Assets.xcassets */,
+				8CFEDDA4236F03D200B05B4A /* Info.plist */,
+			);
+			path = "grabSensorDataTest WatchKit App";
+			sourceTree = "<group>";
+		};
+		8CFEDDAD236F03D200B05B4A /* grabSensorDataTest WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				8CFEDDAE236F03D200B05B4A /* ContentView.swift */,
+				8CFEDDB0236F03D200B05B4A /* HostingController.swift */,
+				8CFEDDCC236F052E00B05B4A /* AccelerometerView.swift */,
+				8CFEDDCE236F08D300B05B4A /* MotionManager.swift */,
+				8CFEDDD0236F098200B05B4A /* RunningBuffer.swift */,
+				8CFEDDB2236F03D200B05B4A /* ExtensionDelegate.swift */,
+				8CFEDDB4236F03D200B05B4A /* NotificationController.swift */,
+				8CFEDDB6236F03D200B05B4A /* NotificationView.swift */,
+				8CFEDDB8236F03D300B05B4A /* Assets.xcassets */,
+				8CFEDDBD236F03D300B05B4A /* Info.plist */,
+				8CFEDDBE236F03D300B05B4A /* PushNotificationPayload.apns */,
+				8CFEDDBA236F03D300B05B4A /* Preview Content */,
+			);
+			path = "grabSensorDataTest WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		8CFEDDBA236F03D300B05B4A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				8CFEDDBB236F03D300B05B4A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8CFEDD95236F03CF00B05B4A /* grabSensorDataTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8CFEDDC9236F03D300B05B4A /* Build configuration list for PBXNativeTarget "grabSensorDataTest" */;
+			buildPhases = (
+				8CFEDD94236F03CF00B05B4A /* Resources */,
+				8CFEDDC8236F03D300B05B4A /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8CFEDD9D236F03CF00B05B4A /* PBXTargetDependency */,
+			);
+			name = grabSensorDataTest;
+			productName = grabSensorDataTest;
+			productReference = 8CFEDD96236F03CF00B05B4A /* grabSensorDataTest.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		8CFEDD99236F03CF00B05B4A /* grabSensorDataTest WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8CFEDDC5236F03D300B05B4A /* Build configuration list for PBXNativeTarget "grabSensorDataTest WatchKit App" */;
+			buildPhases = (
+				8CFEDD98236F03CF00B05B4A /* Resources */,
+				8CFEDDC4236F03D300B05B4A /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8CFEDDAC236F03D200B05B4A /* PBXTargetDependency */,
+			);
+			name = "grabSensorDataTest WatchKit App";
+			productName = "grabSensorDataTest WatchKit App";
+			productReference = 8CFEDD9A236F03CF00B05B4A /* grabSensorDataTest WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		8CFEDDA8236F03D200B05B4A /* grabSensorDataTest WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8CFEDDC1236F03D300B05B4A /* Build configuration list for PBXNativeTarget "grabSensorDataTest WatchKit Extension" */;
+			buildPhases = (
+				8CFEDDA5236F03D200B05B4A /* Sources */,
+				8CFEDDA6236F03D200B05B4A /* Frameworks */,
+				8CFEDDA7236F03D200B05B4A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "grabSensorDataTest WatchKit Extension";
+			productName = "grabSensorDataTest WatchKit Extension";
+			productReference = 8CFEDDA9236F03D200B05B4A /* grabSensorDataTest WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8CFEDD90236F03CF00B05B4A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = "Ovidiu Moldovan";
+				TargetAttributes = {
+					8CFEDD95236F03CF00B05B4A = {
+						CreatedOnToolsVersion = 11.2;
+					};
+					8CFEDD99236F03CF00B05B4A = {
+						CreatedOnToolsVersion = 11.2;
+					};
+					8CFEDDA8236F03D200B05B4A = {
+						CreatedOnToolsVersion = 11.2;
+					};
+				};
+			};
+			buildConfigurationList = 8CFEDD93236F03CF00B05B4A /* Build configuration list for PBXProject "grabSensorDataTest" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8CFEDD8F236F03CF00B05B4A;
+			productRefGroup = 8CFEDD97236F03CF00B05B4A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8CFEDD95236F03CF00B05B4A /* grabSensorDataTest */,
+				8CFEDD99236F03CF00B05B4A /* grabSensorDataTest WatchKit App */,
+				8CFEDDA8236F03D200B05B4A /* grabSensorDataTest WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8CFEDD94236F03CF00B05B4A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CFEDD98236F03CF00B05B4A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CFEDDA3236F03D200B05B4A /* Assets.xcassets in Resources */,
+				8CFEDDA1236F03CF00B05B4A /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CFEDDA7236F03D200B05B4A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CFEDDBC236F03D300B05B4A /* Preview Assets.xcassets in Resources */,
+				8CFEDDB9236F03D300B05B4A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8CFEDDA5236F03D200B05B4A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CFEDDCD236F052E00B05B4A /* AccelerometerView.swift in Sources */,
+				8CFEDDD1236F098200B05B4A /* RunningBuffer.swift in Sources */,
+				8CFEDDCF236F08D300B05B4A /* MotionManager.swift in Sources */,
+				8CFEDDB1236F03D200B05B4A /* HostingController.swift in Sources */,
+				8CFEDDAF236F03D200B05B4A /* ContentView.swift in Sources */,
+				8CFEDDB5236F03D200B05B4A /* NotificationController.swift in Sources */,
+				8CFEDDB3236F03D200B05B4A /* ExtensionDelegate.swift in Sources */,
+				8CFEDDB7236F03D200B05B4A /* NotificationView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8CFEDD9D236F03CF00B05B4A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8CFEDD99236F03CF00B05B4A /* grabSensorDataTest WatchKit App */;
+			targetProxy = 8CFEDD9C236F03CF00B05B4A /* PBXContainerItemProxy */;
+		};
+		8CFEDDAC236F03D200B05B4A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8CFEDDA8236F03D200B05B4A /* grabSensorDataTest WatchKit Extension */;
+			targetProxy = 8CFEDDAB236F03D200B05B4A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8CFEDD9F236F03CF00B05B4A /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8CFEDDA0236F03CF00B05B4A /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8CFEDDBF236F03D300B05B4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8CFEDDC0236F03D300B05B4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8CFEDDC2236F03D300B05B4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"grabSensorDataTest WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = 8R27X53BRJ;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "grabSensorDataTest WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.grabSensorDataTest.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Debug;
+		};
+		8CFEDDC3236F03D300B05B4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"grabSensorDataTest WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = 8R27X53BRJ;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "grabSensorDataTest WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.grabSensorDataTest.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Release;
+		};
+		8CFEDDC6236F03D300B05B4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8R27X53BRJ;
+				IBSC_MODULE = grabSensorDataTest_WatchKit_Extension;
+				INFOPLIST_FILE = "grabSensorDataTest WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.grabSensorDataTest.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Debug;
+		};
+		8CFEDDC7236F03D300B05B4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8R27X53BRJ;
+				IBSC_MODULE = grabSensorDataTest_WatchKit_Extension;
+				INFOPLIST_FILE = "grabSensorDataTest WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.grabSensorDataTest.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Release;
+		};
+		8CFEDDCA236F03D300B05B4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8R27X53BRJ;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.grabSensorDataTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		8CFEDDCB236F03D300B05B4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8R27X53BRJ;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.grabSensorDataTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8CFEDD93236F03CF00B05B4A /* Build configuration list for PBXProject "grabSensorDataTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8CFEDDBF236F03D300B05B4A /* Debug */,
+				8CFEDDC0236F03D300B05B4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8CFEDDC1236F03D300B05B4A /* Build configuration list for PBXNativeTarget "grabSensorDataTest WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8CFEDDC2236F03D300B05B4A /* Debug */,
+				8CFEDDC3236F03D300B05B4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8CFEDDC5236F03D300B05B4A /* Build configuration list for PBXNativeTarget "grabSensorDataTest WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8CFEDDC6236F03D300B05B4A /* Debug */,
+				8CFEDDC7236F03D300B05B4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8CFEDDC9236F03D300B05B4A /* Build configuration list for PBXNativeTarget "grabSensorDataTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8CFEDDCA236F03D300B05B4A /* Debug */,
+				8CFEDDCB236F03D300B05B4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8CFEDD90236F03CF00B05B4A /* Project object */;
+}
